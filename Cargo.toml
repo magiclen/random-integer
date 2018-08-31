@@ -1,0 +1,18 @@
+[package]
+name = "random-integer"
+version = "0.1.0"
+authors = ["Magic Len <len@magiclen.org>"]
+repository = "https://github.com/magiclen/random-integer"
+homepage = "https://magiclen.org/random-integer"
+keywords = ["random", "int", "integer"]
+categories = ["algorithms"]
+description= "Generate a random integer between two integer numbers (including the two integer numbers)."
+readme = "README.md"
+license = "MIT"
+
+[badges]
+travis-ci = { repository = "magiclen/random-integer", branch = "master" }
+appveyor = { repository = "magiclen/random-integer", branch = "master", service = "github" }
+
+[dependencies]
+rand = "0.5.5"
