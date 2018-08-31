@@ -2,6 +2,7 @@ Random Integer
 ====================
 
 [![Build Status](https://travis-ci.org/magiclen/random-integer.svg?branch=master)](https://travis-ci.org/magiclen/random-integer)
+[![Build status](https://ci.appveyor.com/api/projects/status/cdm361f5sxbecdpa/branch/master?svg=true)](https://ci.appveyor.com/project/magiclen/random-integer/branch/master)
 
 Generate a random integer between two integer numbers (including the two integer numbers).
 
