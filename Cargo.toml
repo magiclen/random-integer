@@ -1,6 +1,6 @@
 [package]
 name = "random-integer"
-version = "1.0.1"
+version = "1.0.2"
 authors = ["Magic Len <len@magiclen.org>"]
 repository = "https://github.com/magiclen/random-integer"
 homepage = "https://magiclen.org/random-integer"
@@ -15,4 +15,4 @@ travis-ci = { repository = "magiclen/random-integer", branch = "master" }
 appveyor = { repository = "magiclen/random-integer", branch = "master", service = "github" }
 
 [dependencies]
-rand = "0.5.5"
+rand = "0.6"
