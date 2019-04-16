@@ -13,6 +13,8 @@ println!("{}", rnd);
 ```
 */
 
+#![no_std]
+
 extern crate rand;
 
 use rand::Rng;
