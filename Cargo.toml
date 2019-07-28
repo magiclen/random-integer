@@ -1,6 +1,6 @@
 [package]
 name = "random-integer"
-version = "1.0.3"
+version = "1.0.4"
 authors = ["Magic Len <len@magiclen.org>"]
 repository = "https://github.com/magiclen/random-integer"
 homepage = "https://magiclen.org/random-integer"
@@ -10,9 +10,9 @@ description= "Generate a random integer between two integer numbers (including t
 readme = "README.md"
 license = "MIT"
 
-[badges]
-travis-ci = { repository = "magiclen/random-integer", branch = "master" }
-appveyor = { repository = "magiclen/random-integer", branch = "master", service = "github" }
+[badges.travis-ci]
+repository = "magiclen/random-integer"
+branch = "master"
 
 [dependencies]
 rand = "0.6"
