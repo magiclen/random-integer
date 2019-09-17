@@ -4,7 +4,7 @@ extern crate random_integer;
 fn test_random_u64() {
     let mut result = Vec::new();
 
-    let n = 1000000;
+    let n = 1_000_000;
 
     let nn = n / 10;
 
@@ -21,7 +21,7 @@ fn test_random_u64() {
     let mut errs = [0f64; 10];
 
     for (i, &c) in counter.iter().enumerate() {
-        errs[i] = (((nn as isize) - (c as isize)) as f64).abs() / (nn as f64);
+        errs[i] = (((nn as isize) - (c as isize)) as f64).abs() / f64::from(nn);
     }
 
     for &err in errs.iter() {
@@ -33,7 +33,7 @@ fn test_random_u64() {
 fn test_random_u32() {
     let mut result = Vec::new();
 
-    let n = 1000000;
+    let n = 1_000_000;
 
     let nn = n / 10;
 
@@ -50,7 +50,7 @@ fn test_random_u32() {
     let mut errs = [0f64; 10];
 
     for (i, &c) in counter.iter().enumerate() {
-        errs[i] = (((nn as isize) - (c as isize)) as f64).abs() / (nn as f64);
+        errs[i] = (((nn as isize) - (c as isize)) as f64).abs() / f64::from(nn);
     }
 
     for &err in errs.iter() {
@@ -62,7 +62,7 @@ fn test_random_u32() {
 fn test_random_u16() {
     let mut result = Vec::new();
 
-    let n = 1000000;
+    let n = 1_000_000;
 
     let nn = n / 10;
 
@@ -79,7 +79,7 @@ fn test_random_u16() {
     let mut errs = [0f64; 10];
 
     for (i, &c) in counter.iter().enumerate() {
-        errs[i] = (((nn as isize) - (c as isize)) as f64).abs() / (nn as f64);
+        errs[i] = (((nn as isize) - (c as isize)) as f64).abs() / f64::from(nn);
     }
 
     for &err in errs.iter() {
@@ -91,7 +91,7 @@ fn test_random_u16() {
 fn test_random_u8() {
     let mut result = Vec::new();
 
-    let n = 1000000;
+    let n = 1_000_000;
 
     let nn = n / 10;
 
@@ -108,7 +108,7 @@ fn test_random_u8() {
     let mut errs = [0f64; 10];
 
     for (i, &c) in counter.iter().enumerate() {
-        errs[i] = (((nn as isize) - (c as isize)) as f64).abs() / (nn as f64);
+        errs[i] = (((nn as isize) - (c as isize)) as f64).abs() / f64::from(nn);
     }
 
     for &err in errs.iter() {
@@ -120,7 +120,7 @@ fn test_random_u8() {
 fn test_random_usize() {
     let mut result = Vec::new();
 
-    let n = 1000000;
+    let n = 1_000_000;
 
     let nn = n / 10;
 
@@ -137,7 +137,7 @@ fn test_random_usize() {
     let mut errs = [0f64; 10];
 
     for (i, &c) in counter.iter().enumerate() {
-        errs[i] = (((nn as isize) - (c as isize)) as f64).abs() / (nn as f64);
+        errs[i] = (((nn as isize) - (c as isize)) as f64).abs() / f64::from(nn);
     }
 
     for &err in errs.iter() {
@@ -149,7 +149,7 @@ fn test_random_usize() {
 fn test_random_i64() {
     let mut result = Vec::new();
 
-    let n = 1000000;
+    let n = 1_000_000;
 
     let nn = n / 10;
 
@@ -166,7 +166,7 @@ fn test_random_i64() {
     let mut errs = [0f64; 10];
 
     for (i, &c) in counter.iter().enumerate() {
-        errs[i] = (((nn as isize) - (c as isize)) as f64).abs() / (nn as f64);
+        errs[i] = (((nn as isize) - (c as isize)) as f64).abs() / f64::from(nn);
     }
 
     for &err in errs.iter() {
@@ -178,7 +178,7 @@ fn test_random_i64() {
 fn test_random_i32() {
     let mut result = Vec::new();
 
-    let n = 1000000;
+    let n = 1_000_000;
 
     let nn = n / 10;
 
@@ -195,7 +195,7 @@ fn test_random_i32() {
     let mut errs = [0f64; 10];
 
     for (i, &c) in counter.iter().enumerate() {
-        errs[i] = (((nn as isize) - (c as isize)) as f64).abs() / (nn as f64);
+        errs[i] = (((nn as isize) - (c as isize)) as f64).abs() / f64::from(nn);
     }
 
     for &err in errs.iter() {
@@ -207,7 +207,7 @@ fn test_random_i32() {
 fn test_random_i16() {
     let mut result = Vec::new();
 
-    let n = 1000000;
+    let n = 1_000_000;
 
     let nn = n / 10;
 
@@ -224,7 +224,7 @@ fn test_random_i16() {
     let mut errs = [0f64; 10];
 
     for (i, &c) in counter.iter().enumerate() {
-        errs[i] = (((nn as isize) - (c as isize)) as f64).abs() / (nn as f64);
+        errs[i] = (((nn as isize) - (c as isize)) as f64).abs() / f64::from(nn);
     }
 
     for &err in errs.iter() {
@@ -236,7 +236,7 @@ fn test_random_i16() {
 fn test_random_i8() {
     let mut result = Vec::new();
 
-    let n = 1000000;
+    let n = 1_000_000;
 
     let nn = n / 10;
 
@@ -253,7 +253,7 @@ fn test_random_i8() {
     let mut errs = [0f64; 10];
 
     for (i, &c) in counter.iter().enumerate() {
-        errs[i] = (((nn as isize) - (c as isize)) as f64).abs() / (nn as f64);
+        errs[i] = (((nn as isize) - (c as isize)) as f64).abs() / f64::from(nn);
     }
 
     for &err in errs.iter() {
@@ -265,7 +265,7 @@ fn test_random_i8() {
 fn test_random_isize() {
     let mut result = Vec::new();
 
-    let n = 1000000;
+    let n = 1_000_000;
 
     let nn = n / 10;
 
@@ -282,7 +282,7 @@ fn test_random_isize() {
     let mut errs = [0f64; 10];
 
     for (i, &c) in counter.iter().enumerate() {
-        errs[i] = (((nn as isize) - (c as isize)) as f64).abs() / (nn as f64);
+        errs[i] = (((nn as isize) - (c as isize)) as f64).abs() / f64::from(nn);
     }
 
     for &err in errs.iter() {
