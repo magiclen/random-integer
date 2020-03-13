@@ -16,7 +16,7 @@ println!("{}", rnd);
 #![no_std]
 
 extern crate core;
-extern crate rand;
+pub extern crate rand;
 
 use core::cmp::Ordering;
 
