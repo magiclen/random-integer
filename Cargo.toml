@@ -1,12 +1,12 @@
 [package]
 name = "random-integer"
-version = "1.1.1"
+version = "1.2.0"
 authors = ["Magic Len <len@magiclen.org>"]
 edition = "2018"
 repository = "https://github.com/magiclen/random-integer"
 homepage = "https://magiclen.org/random-integer"
-keywords = ["random", "int", "integer"]
-categories = ["no-std", "algorithms"]
+keywords = ["random", "int", "integer", "inclusive"]
+categories = ["no-std"]
 description= "Generate a random integer between two integer numbers (including the two integer numbers)."
 readme = "README.md"
 license = "MIT"

@@ -5,7 +5,7 @@ Random Integer
 
 Generate a random integer between two integer numbers (including the two integer numbers).
 
-## Example
+## Examples
 
 ```rust
 extern crate random_integer;
@@ -15,6 +15,13 @@ let rnd = random_integer::random_u8(224, 255);
 println!("{}", rnd);
 ```
 
+```rust
+extern crate random_integer;
+
+let rnd: isize = random_integer::random(50, -20);
+
+println!("{}", rnd);
+```
 
 ## Crates.io
 
