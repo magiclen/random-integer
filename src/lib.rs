@@ -2,20 +2,12 @@
 # Random Integer
 Generate a random integer between two integer numbers (including the two integer numbers).
 
-## Examples
+## Example
 
 ```rust
 extern crate random_integer;
 
 let rnd = random_integer::random_u8(224, 255);
-
-println!("{}", rnd);
-```
-
-```rust
-extern crate random_integer;
-
-let rnd: isize = random_integer::random(50, -20);
 
 println!("{}", rnd);
 ```
@@ -33,7 +25,7 @@ use rand::distributions::Distribution;
 use rand::Rng;
 
 #[inline]
-pub fn random<N>(a: N, b: N) -> N
+fn random<N>(a: N, b: N) -> N
 where
     N: SampleUniform + SampleBorrow<N> + Ord + Sized, {
     let mut rng = rand::thread_rng();
@@ -42,7 +34,7 @@ where
 }
 
 #[inline]
-pub fn random_with_rng<N, T: Rng>(a: N, b: N, rng: &mut T) -> N
+fn random_with_rng<N, T: Rng>(a: N, b: N, rng: &mut T) -> N
 where
     N: SampleUniform + SampleBorrow<N> + Ord + Sized, {
     match a.cmp(&b) {
